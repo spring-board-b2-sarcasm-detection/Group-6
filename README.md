@@ -16,5 +16,5 @@ In-scope:
 
 Out-of-scope:
 - Detecting sarcasm in non-English reviews.
-- Handling non-textual sarcasm (e.g., in images or videos or memes.
+- Handling non-textual sarcasm (e.g., in images or videos or memes)
 - Real-time detection of sarcasm during review submission. 
