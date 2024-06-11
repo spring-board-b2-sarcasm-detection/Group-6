@@ -14573,12 +14573,25 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Sarcasm-Detection-in-Movie-Review-Data-Cleaning-Process">Sarcasm Detection in Movie Review Data Cleaning Process<a class="anchor-link" href="#Sarcasm-Detection-in-Movie-Review-Data-Cleaning-Process">&#182;</a></h2><p>In this code snippet, we'll walk through the process of cleaning movie review data for sarcasm detection. Sarcasm detection involves identifying sarcastic remarks in text, which can be particularly challenging due to the subtlety and context-dependency of sarcasm.</p>
+<h3 id="Step-1:-Loading-the-Data">Step 1: Loading the Data<a class="anchor-link" href="#Step-1:-Loading-the-Data">&#182;</a></h3><p>We start by loading the movie review dataset, which contains both the text of the reviews and their corresponding labels (indicating whether the review is sarcastic or not).</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[115]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Mount Google Drive</span>
@@ -14605,7 +14618,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Mounted at /content/drive
+<pre>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&#34;/content/drive&#34;, force_remount=True).
 </pre>
 </div>
 </div>
@@ -14619,7 +14632,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[116]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># File path</span>
@@ -14636,7 +14649,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[117]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Read Excel file</span>
@@ -14654,7 +14667,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[118]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Display the first 5 rows of data</span>
@@ -14676,13 +14689,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[118]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-328e2595-978a-4657-942f-88c6c38b5feb" class="colab-df-container">
+  <div id="df-6f03e3a4-eb8a-40f2-ba6d-83206ecbc040" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -14743,7 +14756,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-328e2595-978a-4657-942f-88c6c38b5feb')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6f03e3a4-eb8a-40f2-ba6d-83206ecbc040')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -14795,12 +14808,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
     <script>
       const buttonEl =
-        document.querySelector('#df-328e2595-978a-4657-942f-88c6c38b5feb button.colab-df-convert');
+        document.querySelector('#df-6f03e3a4-eb8a-40f2-ba6d-83206ecbc040 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-328e2595-978a-4657-942f-88c6c38b5feb');
+        const element = document.querySelector('#df-6f03e3a4-eb8a-40f2-ba6d-83206ecbc040');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -14820,8 +14833,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   </div>
 
 
-<div id="df-a2702fd0-c060-4613-b787-09b28785cbfc">
-  <button class="colab-df-quickchart" onclick="quickchart('df-a2702fd0-c060-4613-b787-09b28785cbfc')"
+<div id="df-f6f90253-d6f5-42a3-920a-da55a8e28556">
+  <button class="colab-df-quickchart" onclick="quickchart('df-f6f90253-d6f5-42a3-920a-da55a8e28556')"
             title="Suggest charts"
             style="display:none;">
 
@@ -14940,7 +14953,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-a2702fd0-c060-4613-b787-09b28785cbfc button');
+        document.querySelector('#df-f6f90253-d6f5-42a3-920a-da55a8e28556 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -14958,12 +14971,77 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-2:-Checking-for-Null-Values">Step 2: Checking for Null Values<a class="anchor-link" href="#Step-2:-Checking-for-Null-Values">&#182;</a></h3><p>Before proceeding with data cleaning and analysis, it's essential to check for any missing values in the dataset. Null values can impact the quality of our analysis and may require special handling. In this section, we'll examine the dataset for any null values and address them if necessary.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[119]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Check for null values in the 'Review' column</span>
+<span class="n">null_count</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Number of null values in 'Review' column: </span><span class="si">{</span><span class="n">null_count</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Number of null values in &#39;Review&#39; column: 0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-3:-Checking-for-Duplicate-Values">Step 3: Checking for Duplicate Values<a class="anchor-link" href="#Step-3:-Checking-for-Duplicate-Values">&#182;</a></h3><p>Duplicate entries can skew analysis and machine learning models. In this section, we'll identify and handle duplicate records in the movie review dataset.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[120]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Check for duplicate values</span>
@@ -15004,7 +15082,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[121]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Display the duplicate rows</span>
@@ -15107,7 +15185,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[122]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Checking for duplicates based on 'Review', 'Sentiment'and 'Sarcasm'</span>
@@ -15148,7 +15226,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[123]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Remove duplicate rows from the entire dataframe</span>
@@ -15184,12 +15262,25 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-4:-Identifying-Unique-Values-for-Labeling-Correction">Step 4: Identifying Unique Values for Labeling Correction<a class="anchor-link" href="#Step-4:-Identifying-Unique-Values-for-Labeling-Correction">&#182;</a></h3><p>Before proceeding with the labeling correction process, it's essential to identify all unique values present in the column of interest ("sentiment" or "sarcasm"). This step is crucial because manual labeling may lead to spelling mistakes, variations in labeling terminologies, or inconsistencies in labeling conventions.</p>
+<p>First, let's gain an understanding of the data by examining the unique values present in the column of interest. This will help us identify any misspelled labels, variations in labeling, or redundant labels that need to be corrected.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[124]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Check the count of unique values in the 'sentiment' column and 'sarcasm' column</span>
@@ -15255,15 +15346,28 @@ Name: count, dtype: int64
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-5:-Analyzing-Unique-Values-and-Labeling-Correction">Step 5: Analyzing Unique Values and Labeling Correction<a class="anchor-link" href="#Step-5:-Analyzing-Unique-Values-and-Labeling-Correction">&#182;</a></h3><p>After obtaining the unique values, carefully analyze them to identify any inconsistencies or variations in labeling. Pay attention to spelling mistakes, synonymous labels, or redundant categories that need to be consolidated for accurate labeling.</p>
+<p>Once you've identified the unique values and potential labeling inconsistencies, proceed with correcting the labels. This may involve standardizing labels, correcting spelling errors, or merging synonymous categories to ensure consistency and accuracy in labeling.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[125]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="c1"># Normalize the values</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Lowercase the values</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'Sentiment'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Sentiment'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'Sarcasm'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Sarcasm'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 </pre></div>
@@ -15278,7 +15382,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[126]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sentiment_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Sentiment'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -15326,7 +15430,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[127]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Change the value</span>
@@ -15343,7 +15447,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[128]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Again check Values</span>
@@ -15390,7 +15494,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[129]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Check for 'Sarcasm'</span>
@@ -15442,7 +15546,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[130]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Change the label</span>
@@ -15459,7 +15563,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[131]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Again Check for 'Sarcasm' column</span>
@@ -15500,12 +15604,35 @@ Name: count, dtype: int64
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-6:-Insight-from-Counting-Combinations-of-Sentiment-and-Sarcasm">Step 6: Insight from Counting Combinations of Sentiment and Sarcasm<a class="anchor-link" href="#Step-6:-Insight-from-Counting-Combinations-of-Sentiment-and-Sarcasm">&#182;</a></h3><ol>
+<li><p><strong>Positive Sentiment with Sarcasm</strong> : Recognizing instances where positive sentiments are expressed sarcastically allows the sarcasm detection model to distinguish between genuine positive sentiment and sarcastic remarks disguised as positivity. By identifying patterns indicative of sarcasm within positive contexts, the model can better discern nuanced expressions.</p>
+</li>
+<li><p><strong>Positive Sentiment with Non-Sarcasm</strong> : Understanding the frequency of genuinely positive sentiments without sarcasm provides a baseline for comparison. By contrasting these instances with positive sentiments accompanied by sarcasm, the model can learn to differentiate between sincere expressions of positivity and sarcastic ones, enhancing its ability to identify sarcasm accurately.</p>
+</li>
+<li><p><strong>Negative Sentiment with Sarcasm</strong> : Identifying cases where negative sentiments are conveyed sarcastically helps the model capture the subtleties of sarcastic negativity. By recognizing patterns characteristic of sarcasm within negative contexts, the model can accurately identify instances where negative sentiments are expressed ironically or satirically.</p>
+</li>
+<li><p><strong>Negative Sentiment without Sarcasm</strong> : Analyzing instances of sincere negative sentiments provides insight into the severity and intensity of negative opinions expressed without sarcasm. By distinguishing between genuine expressions of negativity and sarcastic ones, the model can avoid misinterpreting straightforward negative remarks as sarcastic, ensuring more accurate detection of sarcasm.</p>
+</li>
+<li><p><strong>Neutral Sentiment with Sarcasm</strong> : Recognizing instances where sentiments are neutral but sarcasm is present helps the model understand sarcasm in a broader context. It allows the model to identify sarcasm even when the sentiment of the text is neither positive nor negative. By capturing sarcasm in neutral contexts, the model becomes more robust and versatile, capable of detecting sarcasm across a wide range of textual expressions.</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[132]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Count of each combination of sentiment and sarcasm</span>
@@ -15546,12 +15673,24 @@ Name: count, dtype: int64
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-7:-Removing-HTML-Tags-from-Text">Step 7: Removing HTML Tags from Text<a class="anchor-link" href="#Step-7:-Removing-HTML-Tags-from-Text">&#182;</a></h3><p>When dealing with text data extracted from sources like web pages or online documents, it's common to encounter HTML tags that need to be removed for further analysis. HTML tags can contain formatting or structural information irrelevant to the text's semantic meaning.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[133]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Remove HTML tags from the text columns</span>
@@ -15559,11 +15698,13 @@ Name: count, dtype: int64
 <span class="k">def</span> <span class="nf">remove_html_tags</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="n">clean</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">'&lt;.*?&gt;'</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">clean</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    <span class="c1"># Replace HTML line breaks with space</span>
+    <span class="n">clean</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'&lt;br\s*/?&gt;'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="n">clean</span><span class="p">)</span>
+    <span class="c1"># Remove extra spaces</span>
+    <span class="n">clean</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\s+'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="n">clean</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
-<span class="c1"># 'Review' column has the text data with HTML tags</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_html_tags</span><span class="p">)</span>
 
-<span class="c1"># Verify the changes</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -15582,13 +15723,13 @@ Name: count, dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[133]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-87c7fd12-2e1c-4a20-ade6-7a77ca32526b" class="colab-df-container">
+  <div id="df-da2af7d3-8c69-49b3-9696-cec8ec975cf1" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -15649,7 +15790,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-87c7fd12-2e1c-4a20-ade6-7a77ca32526b')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-da2af7d3-8c69-49b3-9696-cec8ec975cf1')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -15701,12 +15842,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-87c7fd12-2e1c-4a20-ade6-7a77ca32526b button.colab-df-convert');
+        document.querySelector('#df-da2af7d3-8c69-49b3-9696-cec8ec975cf1 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-87c7fd12-2e1c-4a20-ade6-7a77ca32526b');
+        const element = document.querySelector('#df-da2af7d3-8c69-49b3-9696-cec8ec975cf1');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -15726,8 +15867,8 @@ Name: count, dtype: int64
   </div>
 
 
-<div id="df-397d5df3-eea6-45c9-b9f0-762072aae370">
-  <button class="colab-df-quickchart" onclick="quickchart('df-397d5df3-eea6-45c9-b9f0-762072aae370')"
+<div id="df-18306250-83a8-4b86-82c6-cdcf10cc0da6">
+  <button class="colab-df-quickchart" onclick="quickchart('df-18306250-83a8-4b86-82c6-cdcf10cc0da6')"
             title="Suggest charts"
             style="display:none;">
 
@@ -15846,7 +15987,7 @@ Name: count, dtype: int64
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-397d5df3-eea6-45c9-b9f0-762072aae370 button');
+        document.querySelector('#df-18306250-83a8-4b86-82c6-cdcf10cc0da6 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -15869,7 +16010,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[134]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Clean the reviews</span>
@@ -15881,6 +16022,7 @@ Name: count, dtype: int64
     <span class="c1"># Remove single quotation marks</span>
     <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'"'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">text</span>
+
 
 <span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_review</span><span class="p">)</span>
 </pre></div>
@@ -15895,7 +16037,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[135]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Display data from rows 195 to 200</span>
@@ -15917,13 +16059,13 @@ Name: count, dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[135]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-2db4d016-3cb4-484c-9b07-1cdffe7dc00b" class="colab-df-container">
+  <div id="df-a62473bf-cf08-48cd-a20c-a13834ba170d" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -15990,7 +16132,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-2db4d016-3cb4-484c-9b07-1cdffe7dc00b')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a62473bf-cf08-48cd-a20c-a13834ba170d')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -16042,12 +16184,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-2db4d016-3cb4-484c-9b07-1cdffe7dc00b button.colab-df-convert');
+        document.querySelector('#df-a62473bf-cf08-48cd-a20c-a13834ba170d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-2db4d016-3cb4-484c-9b07-1cdffe7dc00b');
+        const element = document.querySelector('#df-a62473bf-cf08-48cd-a20c-a13834ba170d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -16067,8 +16209,8 @@ Name: count, dtype: int64
   </div>
 
 
-<div id="df-dd5169cc-ba94-4c7b-adab-fc5c0aec16ea">
-  <button class="colab-df-quickchart" onclick="quickchart('df-dd5169cc-ba94-4c7b-adab-fc5c0aec16ea')"
+<div id="df-0b89885a-8de8-428c-b6ad-aa73f65b1df7">
+  <button class="colab-df-quickchart" onclick="quickchart('df-0b89885a-8de8-428c-b6ad-aa73f65b1df7')"
             title="Suggest charts"
             style="display:none;">
 
@@ -16187,7 +16329,7 @@ Name: count, dtype: int64
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-dd5169cc-ba94-4c7b-adab-fc5c0aec16ea button');
+        document.querySelector('#df-0b89885a-8de8-428c-b6ad-aa73f65b1df7 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -16205,25 +16347,46 @@ Name: count, dtype: int64
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-8:-Insight-on-Special-Symbols-and-Punctuation-Marks-Indicative-of-Sarcasm">Step 8: Insight on Special Symbols and Punctuation Marks Indicative of Sarcasm<a class="anchor-link" href="#Step-8:-Insight-on-Special-Symbols-and-Punctuation-Marks-Indicative-of-Sarcasm">&#182;</a></h3><p>Special symbols and punctuation marks that can be indicative of sarcasm include:</p>
+<ol>
+<li><strong>Ellipses (<code>...</code>)</strong> : Often used to imply something left unsaid or to create a sarcastic tone.</li>
+<li><strong>Quotation Marks (<code>"</code>)</strong> : Used to indicate sarcasm by quoting words or phrases in a mocking manner.</li>
+<li><strong>Exclamation Marks (<code>!</code>)</strong> : Can be used to exaggerate statements, often in a sarcastic tone.</li>
+<li><strong>Question Marks (<code>?</code>)</strong> : Can be used to imply doubt or irony.</li>
+<li><strong>Combination of Exclamation and Question Marks (<code>!?</code> or <code>?!</code>)</strong> : Used to express incredulity or sarcastic surprise.</li>
+<li><strong>Capitalization</strong> : Using all caps for certain words to indicate sarcasm (e.g., "Oh REALLY?").</li>
+<li><strong>Parentheses (<code>(</code> and <code>)</code>)</strong> : Sometimes used to add sarcastic asides or comments.</li>
+</ol>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[136]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Clean the special symbols</span>
-<span class="kn">import</span> <span class="nn">re</span>
-
 <span class="k">def</span> <span class="nf">clean_review</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="c1"># Remove ellipses</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\.\.\.'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\.{2,}'</span><span class="p">,</span> <span class="s1">'...'</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
     <span class="c1"># Remove asterisks</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\*</span><span class="si">{5}</span><span class="s1">'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-    <span class="c1"># Remove special symbols</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'[^a-zA-Z0-9\s]'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\*{2,}'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    <span class="c1"># Remove any character that is not a letter, number, punctuation, or whitespace</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'[^a-zA-Z0-9\s.,!?</span><span class="se">\'</span><span class="s1">\"()\-]'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    <span class="c1"># Remove extra spaces</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\s+'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">text</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_review</span><span class="p">)</span>
 </pre></div>
@@ -16238,7 +16401,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[137]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Display data from rows 195 to 200</span>
@@ -16260,13 +16423,13 @@ Name: count, dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[137]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-47952d1f-523b-49d6-b1bb-ec34898b84d6" class="colab-df-container">
+  <div id="df-ae6d7f0a-b2b1-4453-b448-92bb2bd2b758" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -16293,25 +16456,25 @@ Name: count, dtype: int64
   <tbody>
     <tr>
       <th>195</th>
-      <td>I watched mask in the 80s and its currently sh...</td>
+      <td>I watched mask in the 80's and it's currently ...</td>
       <td>negative</td>
       <td>non-sarcastic</td>
     </tr>
     <tr>
       <th>196</th>
-      <td>Phantasm Class Phantasm IIawesome Phantasm III...</td>
+      <td>Phantasm ...Class. Phantasm II...awesome. Phan...</td>
       <td>negative</td>
       <td>non-sarcastic</td>
     </tr>
     <tr>
       <th>197</th>
-      <td>Ludicrous Angelic 9yearold Annakin turns into ...</td>
+      <td>Ludicrous. Angelic 9-year-old Annakin turns in...</td>
       <td>negative</td>
       <td>non-sarcastic</td>
     </tr>
     <tr>
       <th>198</th>
-      <td>Scotty Grant Cramer who would go on to star in...</td>
+      <td>Scotty (Grant Cramer, who would go on to star ...</td>
       <td>negative</td>
       <td>non-sarcastic</td>
     </tr>
@@ -16333,7 +16496,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-47952d1f-523b-49d6-b1bb-ec34898b84d6')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ae6d7f0a-b2b1-4453-b448-92bb2bd2b758')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -16385,12 +16548,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-47952d1f-523b-49d6-b1bb-ec34898b84d6 button.colab-df-convert');
+        document.querySelector('#df-ae6d7f0a-b2b1-4453-b448-92bb2bd2b758 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-47952d1f-523b-49d6-b1bb-ec34898b84d6');
+        const element = document.querySelector('#df-ae6d7f0a-b2b1-4453-b448-92bb2bd2b758');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -16410,8 +16573,8 @@ Name: count, dtype: int64
   </div>
 
 
-<div id="df-4351703a-71a8-4263-a9b4-085b87ce7653">
-  <button class="colab-df-quickchart" onclick="quickchart('df-4351703a-71a8-4263-a9b4-085b87ce7653')"
+<div id="df-b0d5153e-461b-459a-819a-1840ec368b1d">
+  <button class="colab-df-quickchart" onclick="quickchart('df-b0d5153e-461b-459a-819a-1840ec368b1d')"
             title="Suggest charts"
             style="display:none;">
 
@@ -16530,7 +16693,7 @@ Name: count, dtype: int64
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-4351703a-71a8-4263-a9b4-085b87ce7653 button');
+        document.querySelector('#df-b0d5153e-461b-459a-819a-1840ec368b1d button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -16553,7 +16716,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[138]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Calculate the percentage of sarcasm</span>
@@ -16576,7 +16739,7 @@ Name: count, dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[138]:</div>
 
 
 
@@ -16599,7 +16762,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[139]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Calculate the percentage of each combination of sentiment and sarcasm</span>
@@ -16622,7 +16785,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[139]:</div>
 
 
 
@@ -16643,12 +16806,26 @@ dtype: float64</pre>
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-9:-Visualization-of-Sarcasm-Distribution:">Step 9: Visualization of Sarcasm Distribution:<a class="anchor-link" href="#Step-9:-Visualization-of-Sarcasm-Distribution:">&#182;</a></h3><p><strong>1. Percentage of Sarcasm</strong> : The first pie chart displays the distribution of sarcasm within the dataset. By visualizing the percentage of sarcastic remarks relative to non-sarcastic ones, you can understand the prevalence of sarcasm in the overall dataset. A higher percentage of sarcasm indicates a dataset where sarcasm is more prevalent.
+Visualization of Sentiment-Sarcasm Combinations:</p>
+<p><strong>2. Percentage of Sentiment-Sarcasm Combinations</strong> : The second pie chart illustrates the distribution of different combinations of sentiment and sarcasm. This visualization provides insights into how sarcasm is distributed across different sentiment categories (positive, negative, neutral). By examining the percentages of each combination, you can identify patterns and trends in the occurrence of sarcasm within different sentiment contexts.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[140]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Plot the data</span>
@@ -16703,12 +16880,430 @@ class="
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Step-10:-Removing-Stopwords-from-Review-Data">Step 10: Removing Stopwords from Review Data<a class="anchor-link" href="#Step-10:-Removing-Stopwords-from-Review-Data">&#182;</a></h3><p>Stopwords are common words in a language (e.g., "the", "is", "and") that are typically filtered out before or after processing natural language data. Removing stopwords helps to focus on the more meaningful words in the reviews.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[141]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+
+<span class="c1"># Download stopwords from nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">'stopwords'</span><span class="p">)</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">'english'</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Insight:">Insight:<a class="anchor-link" href="#Insight:">&#182;</a></h4><ol>
+<li>Takes a string of text as input.</li>
+<li>Splits the text into individual words.</li>
+<li>Filters out the stopwords.</li>
+<li>Joins the remaining words back into a single string.</li>
+<li>Returns the cleaned string.</li>
+</ol>
+<p>For example : <strong><em>Another masterpiece where nothing happens, don't waste your time!</em></strong><br>
+The Function would remove common stop words like <strong>"where,"</strong> <strong>"nothing,"</strong> <strong>"don't,"</strong> and <strong>"your,"</strong> leaving behind the more meaningful content of the sentence.<br></p>
+<p>Output : <strong><em>Another masterpiece happens, waste time!</em></strong></p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[142]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">remove_stopwords</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">filtered_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">]</span>
+    <span class="k">return</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">filtered_words</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Review'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_stopwords</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[111]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+  <div id="df-659d5658-e66a-4e84-ba06-1581cda79ad9" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Review</th>
+      <th>Sentiment</th>
+      <th>Sarcasm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>One reviewers mentioned watching 1 Oz episode ...</td>
+      <td>positive</td>
+      <td>non-sarcastic</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>wonderful little production. filming technique...</td>
+      <td>positive</td>
+      <td>non-sarcastic</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>movie groundbreaking experience! I've never se...</td>
+      <td>positive</td>
+      <td>sarcastic</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>thought wonderful way spend time hot summer we...</td>
+      <td>positive</td>
+      <td>non-sarcastic</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Basically there's family little boy (Jake) thi...</td>
+      <td>negative</td>
+      <td>sarcastic</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-659d5658-e66a-4e84-ba06-1581cda79ad9')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-659d5658-e66a-4e84-ba06-1581cda79ad9 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-659d5658-e66a-4e84-ba06-1581cda79ad9');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-0d843692-17d2-422f-ac90-77d302346f82">
+  <button class="colab-df-quickchart" onclick="quickchart('df-0d843692-17d2-422f-ac90-77d302346f82')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-0d843692-17d2-422f-ac90-77d302346f82 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Save-the-data-in-CSV-format-for-further-use-or-analysis">Save the data in CSV format for further use or analysis<a class="anchor-link" href="#Save-the-data-in-CSV-format-for-further-use-or-analysis">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[143]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Save the cleaned data to a new CSV file</span>
@@ -16726,7 +17321,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[144]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/content/drive/MyDrive/IMBD/Clean_data.csv'</span><span class="p">)</span>
@@ -16748,7 +17343,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[144]:</div>
 
 
 
@@ -16768,11 +17363,11 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[114]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">shell</span>
-<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="n">MyDrive</span><span class="o">/</span><span class="n">IMBD</span><span class="o">/</span><span class="n">Data_Preprocessing</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="n">MyDrive</span><span class="o">/</span><span class="n">IMBD</span><span class="o">/</span><span class="n">Data_Cleaning</span>
 </pre></div>
 
      </div>
@@ -16794,8 +17389,8 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[NbConvertApp] Converting notebook /content/drive/MyDrive/IMBD/Data_Preprocessing to html
-[NbConvertApp] Writing 721860 bytes to /content/drive/MyDrive/IMBD/Data_Preprocessin.html
+<pre>[NbConvertApp] Converting notebook /content/drive/MyDrive/IMBD/Data_Cleaning to html
+[NbConvertApp] Writing 739556 bytes to /content/drive/MyDrive/IMBD/Data_Cleanin.html
 </pre>
 </div>
 </div>
@@ -16803,7 +17398,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[114]:</div>
 
 
 
