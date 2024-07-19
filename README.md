@@ -9,11 +9,18 @@ Online reviews hold immense power in the film industry, shaping audience percept
 
  - [IMDb Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 
-![data.png]()
+![Data_distribution](https://github.com/user-attachments/assets/6b5eed54-4517-4b5f-bbf6-f3f794fc8098)
 
- 
+After Spliting dataset into Train, Teat and validation Dataset
+
+![Split_data](https://github.com/user-attachments/assets/16e23170-0cea-482c-a537-b2ecc5b5676e)
+
+<br>
+
 ## Scope of the Solution
+<br>
 
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/3758d5ea-6441-4160-8f97-aa732af1cf27)
 
 In-scope:
 - Developing a sarcasm detection model specifically for English-language IMDb reviews.
@@ -39,8 +46,9 @@ RoBERTa (Robustly optimized BERT approach) is an extension of BERT (Bidirectiona
 
 **Dynamic Masking** :
 - Unlike BERT, which uses static masking during pre-training, RoBERTa employs dynamic masking. This means the model sees different masked tokens during each epoch of training, leading to better generalization and robustness.
+<br>
 
-
+![Architecture drawio](https://github.com/user-attachments/assets/ccadaac3-b02d-4bac-a2fd-828ff1060500)
 
 ## Model Evaluation
 
@@ -61,8 +69,9 @@ RoBERTa (Robustly optimized BERT approach) is an extension of BERT (Bidirectiona
 
 **Macro and Weighted Averages**:
 The macro average (0.86) and weighted average (0.86) for precision, recall, and F1-score are the same, underscoring the model's balanced performance across both classes.
+<br>
 
-
+![Classification report and confusion matrix](https://github.com/user-attachments/assets/9f9fbeaa-6006-40ef-87e8-809f60562f34)
 
 
 **Interpretation**:
