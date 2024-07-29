@@ -14,7 +14,7 @@
 
 ![Sarcasm](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh2oNie2NZjxi-5yhoj__Og7FtVcuTz2pS4A&s)
 
-![workflow]![workflow_1](https://github.com/user-attachments/assets/1d0b52e0-0f79-4e1f-88ca-6b13c10bff5f)
+![workflow_1.jpg]![workflow](https://github.com/user-attachments/assets/1d0b52e0-0f79-4e1f-88ca-6b13c10bff5f)
 
 
 
@@ -52,19 +52,18 @@ The input Dataset reviews are analysed and following opeartions on the dataset:
 
 **Length of reviews**
 
-[image](https://github.com/user-attachments/assets/8f024d62-b0db-4add-a3fa-91aa861063dc)
+![length of reviews.jpg]![image](https://github.com/user-attachments/assets/8f024d62-b0db-4add-a3fa-91aa861063dc)
 
 
 **no.of unique labels**
 
-[image](https://github.com/user-attachments/assets/46366fee-72ea-4ca6-ad97-831f2f5bee11)
+![labels count.jpg]![image](https://github.com/user-attachments/assets/46366fee-72ea-4ca6-ad97-831f2f5bee11)
 
 
 
 **Split of data into Train , Test , Validation data**
 
-[image](https://github.com/user-attachments/assets/d0629260-5035-495b-b6d8-bc53f50481b6)
-
+![datset split.jpg]![image](https://github.com/user-attachments/assets/d0629260-5035-495b-b6d8-bc53f50481b6)
 
 ## **2. DATA CLEANING**
 
