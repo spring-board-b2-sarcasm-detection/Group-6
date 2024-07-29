@@ -14,7 +14,7 @@
 
 ![Sarcasm](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh2oNie2NZjxi-5yhoj__Og7FtVcuTz2pS4A&s)
 
-![workflow][workflow](https://github.com/user-attachments/assets/1d0b52e0-0f79-4e1f-88ca-6b13c10bff5f)
+![workflow](https://github.com/user-attachments/assets/1d0b52e0-0f79-4e1f-88ca-6b13c10bff5f)
 
 
 
@@ -110,6 +110,7 @@ The Gated Recurrent Unit (GRU) model offers several advantages in deep learning,
 
 
 **The final evalution report of the model**
+
 ![image](https://github.com/user-attachments/assets/8a0ab208-6abb-433d-8bcc-8c6f513d2be8)
 
 ## **Conclusion**
