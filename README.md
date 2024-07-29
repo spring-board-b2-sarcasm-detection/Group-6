@@ -14,7 +14,7 @@
 
 ![Sarcasm](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh2oNie2NZjxi-5yhoj__Og7FtVcuTz2pS4A&s)
 
-![workflow_1.jpg]![workflow](https://github.com/user-attachments/assets/1d0b52e0-0f79-4e1f-88ca-6b13c10bff5f)
+![workflow][workflow](https://github.com/user-attachments/assets/1d0b52e0-0f79-4e1f-88ca-6b13c10bff5f)
 
 
 
@@ -52,18 +52,18 @@ The input Dataset reviews are analysed and following opeartions on the dataset:
 
 **Length of reviews**
 
-![length of reviews.jpg]![image](https://github.com/user-attachments/assets/8f024d62-b0db-4add-a3fa-91aa861063dc)
+![image](https://github.com/user-attachments/assets/8f024d62-b0db-4add-a3fa-91aa861063dc)
 
 
 **no.of unique labels**
 
-![labels count.jpg]![image](https://github.com/user-attachments/assets/46366fee-72ea-4ca6-ad97-831f2f5bee11)
+![image](https://github.com/user-attachments/assets/46366fee-72ea-4ca6-ad97-831f2f5bee11)
 
 
 
 **Split of data into Train , Test , Validation data**
 
-![datset split.jpg]![image](https://github.com/user-attachments/assets/d0629260-5035-495b-b6d8-bc53f50481b6)
+![image](https://github.com/user-attachments/assets/d0629260-5035-495b-b6d8-bc53f50481b6)
 
 ## **2. DATA CLEANING**
 
@@ -90,7 +90,7 @@ We will follow the following methods in order for preprocessing the data :
 5.   Checking for dataset imbalance
 
 ## **4. Model Training**
-![model architecture]![image](https://github.com/user-attachments/assets/b0dd27d4-e624-4769-bf51-d69171b07823)
+![image](https://github.com/user-attachments/assets/b0dd27d4-e624-4769-bf51-d69171b07823)
 
 - Among the various ML models like  logistic regression, Naive Bayes, decision tree, Random Forest and few deep learning model like  Neural Networks (NN), Convolutional Neural Networks (CNN), Long Short-Term Memory (LSTM), Gated Recurrent Unit (GRU), and BERT models , GRU model stood out best for our dataset
 
@@ -108,6 +108,9 @@ The Gated Recurrent Unit (GRU) model offers several advantages in deep learning,
 
 - **Good Performance**: GRUs generally achieve strong performance across a wide range of sequence modeling tasks, including natural language processing, time series analysis, and speech recognition.
 
+
+**The final evalution report of the model**
+![image](https://github.com/user-attachments/assets/8a0ab208-6abb-433d-8bcc-8c6f513d2be8)
+
 ## **Conclusion**
 - The GRU-based model demonstrates strong performance, achieving an overall accuracy of 82% on the dataset, with balanced precision and recall across both classes.
-
